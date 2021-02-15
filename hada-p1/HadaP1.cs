@@ -34,5 +34,15 @@ namespace hada_p1
         {
             return m * 60;
         }
+
+        /// <summary>
+        /// Convierte de horas a minutos
+        /// </summary>
+        /// <param name="h">horas</param>
+        /// <returns>minutos</returns>
+        public static double Hours2Minutes(double h)
+        {
+            return h * 60;
+        }
     }
 }

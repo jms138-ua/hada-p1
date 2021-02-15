@@ -13,7 +13,7 @@ namespace hada_p1
             char bool_bucle = 's';
             do
             {
-                Console.Write("\nUnidad de conversion y cantidad (s/m n) ");
+                Console.Write("\nUnidad de conversion y cantidad (s/m/h n) ");
                 string input = Console.ReadLine();
 
                 double result;
@@ -21,6 +21,8 @@ namespace hada_p1
                     result = HadaP1.Seconds2Minutes(double.Parse(input.Substring(2)));
                 else if (input[0] == 'm')
                     result = HadaP1.Minutes2Seconds(double.Parse(input.Substring(2)));
+                else if (input[0] == 'h')
+                    result = HadaP1.Hours2Minutes(double.Parse(input.Substring(2)));
                 else
                 {
                     Console.WriteLine("No existe esa medida");
